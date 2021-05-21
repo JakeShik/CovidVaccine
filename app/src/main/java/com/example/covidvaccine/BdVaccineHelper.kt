@@ -19,7 +19,7 @@ class BdVaccineHelper(context: Context?)
         if (db != null) {
             TabelaRegiao(db).cria()
             TabelaPacientes(db).cria()
-            TabelaVacinas(db).cria()
+            TabelaVacinas(db).cria() // Está a apresentar erros nos testes.
         }
     }
 
@@ -46,6 +46,8 @@ class BdVaccineHelper(context: Context?)
      * @param newVersion The new database version.
      */
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+       /* db.execSQL("DROP TABLE IF EXISTS "+TabelaVacinas);
+        onCreate(db)*/
     }
 
     companion object {
