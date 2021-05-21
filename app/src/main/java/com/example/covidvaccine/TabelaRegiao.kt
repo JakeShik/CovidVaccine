@@ -42,6 +42,6 @@ class TabelaRegiao(db: SQLiteDatabase) {
         const val NUMERO_NAO_VACINADOS = "NumeroHabitantesNaoVacinados"
         const val FAIXA_ETARIA = "FaixaEtáriaSendoVacinada"
 
-        //val TODAS_COLUNAS = arrayOf(BaseColumns._ID, CAMPO_NOME)
+        val TODAS_COLUNAS = arrayOf(BaseColumns._ID, CAMPO_NOME)
     }
 }

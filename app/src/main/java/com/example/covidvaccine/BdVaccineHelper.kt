@@ -1,4 +1,4 @@
-package pt.ipg.livros
+package com.example.covidvaccine
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
@@ -7,7 +7,7 @@ import com.example.covidvaccine.TabelaPacientes
 import com.example.covidvaccine.TabelaRegiao
 import com.example.covidvaccine.TabelaVacinas
 
-class BdLivrosOpenHelper(context: Context?)
+class BdVaccineHelper(context: Context?)
     : SQLiteOpenHelper(context, NOME_BASE_DADOS, null, VERSAO_BASE_DADOS) {
     /**
      * Called when the database is created for the first time. This is where the
